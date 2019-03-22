@@ -1,0 +1,295 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+	
+ /*style*/
+body {
+	font:16px/28px "Comic Sans MS", cursive;
+	background-color:#eaeaea;
+	background-image:url(../asetts/circuit.png);
+	color:#333;
+}
+	
+.top-bar {/*Selamat Datang di Website Saya @The Best Ummah*/
+	font-family: "Comic Sans MS", cursive;
+	font-size:20px;
+	font-weight:bold;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	height:40px;
+	background-color:#87CEFA;
+	border-bottom:3px solid salmon;
+	z-index:1111;
+}
+	
+.container {/*konten website*/
+	width:960px;/*lebar*/
+	height:3390px;/*tinggi*/
+	margin:40px auto;
+	background-color:#fff;
+}
+	
+.himatik {/*icon yang berada dipojok kanan bagian atas (reborn knights*/
+	width:200px;
+	height:200px;
+	background-image:url(../asetts/himatik1.png);
+	background-repeat:no-repeat;
+	display:inline-block;
+	text-indent:-9999px;
+	position:absolute;
+	top:47px;
+	right:135px;
+}
+	
+.header {
+	padding:20px;
+	padding-bottom:10px;
+}
+	
+.header .judul {/*judul ("Website Rajib"*/
+	font-family: sans-serif;
+	font-size:40px;
+	font-weight:bold;
+
+}
+	
+.header ul li {
+	font-family: sans-serif;
+	display:inline-block;
+	margin-top:23px;
+	margin-right:10px;
+	cursor:pointer;
+	box-shadow: 5px 5px 5px rgba(0,0,0, .75);
+}
+	
+.header a { /*tulisan menu navbar*/
+	text-decoration:none;
+	color:salmon;
+	padding:3px;
+}
+
+/*DropDown submenu*/
+ul, li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu li {
+	background: #556273;
+	border-right: 1px solid;
+	color: #777;
+	width: 118px;
+	padding: 0 15px;
+}
+
+ul.menu li:hover {
+	background: #fff;
+	color: #fff;
+}
+
+ul.subMenu {
+	display: none;
+}
+
+ul.menu li:hover ul.subMenu {
+	display: block;
+	position: absolute;
+}
+
+ul.subMenu {
+
+	margin-left: -15px;
+}
+
+ul.subMenu li {
+	display: block;
+}
+
+/*DropDown submenu1*/
+ul, li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu li {
+	background: #556273;
+	border-right: 0 solid;
+	color: #777;
+	width: 118px;
+	padding: 0 15px;
+}
+
+ul.menu li:hover {
+	background: #fff;
+	color: #fff;
+}
+
+ul.subMenu1 {
+	display: none;
+}
+
+ul.menu li:hover ul.subMenu1 {
+	display: block;
+	position: absolute;
+}
+
+ul.subMenu1 {
+
+	margin-left: -15px;
+}
+
+ul.subMenu1 li {
+	display: block;
+	margin-top: 0px;
+}
+
+/*DropDown*/
+	
+.hero {/*gambar header*/
+	height:320px;
+	background-image:url(../asetts/hero4.png);
+	background-size:cover;
+	background-position:0-230px;
+	border-bottom:5px solid #87CEFA;
+	border-top:5px solid salmon;
+}
+	
+.main {
+	width:600px;
+	padding:20px;
+	box-sizing:boder-box;
+	float:left;
+}
+	
+.main h2 {/*tulisan yang ada di atas penulis ("Pariwisata Kab.Banggai")*/
+	font-size:28px;
+	font-weight:bold;
+}
+	
+.main .penulis {
+	font-size:11px;
+	margin-top:-5px;
+}
+	
+.main .penulis a {
+	color:salmon;
+	text-decoration:none;
+}
+	
+.main p {
+	margin-bottom:20px;
+	font-size:14px;
+}
+	
+/* sidebar */
+.sidebar {
+	width:300px;
+	float:right;
+	padding:10px;
+}
+	
+.sidebar h3 {
+	font-family: "Comic Sans MS", cursive;
+	font-weight:bold;
+	color:#666;
+}
+	
+.sidebar img {/*pengaturan gambar ("razib.jpg"*/
+	width:70px;
+	height:90px;
+	float:left;
+	padding-right:10px;
+}
+
+.image {/*gambar kalender yang ada di website*/
+	width:1000px;
+	height:2000px;
+	background-image:url(../asetts/himatik3.png);
+	background-repeat:no-repeat;
+	display:inline-block;
+	text-indent:-9999px;
+	position:absolute;
+	top:850px;
+	right:-488px;
+}
+	
+.sidebar p {/*pengaturan font*/
+		font:12px/18px "Comic Sans MS", cursive;
+}
+
+/*footer*/
+.footer {
+	background-color:#333;/*warna background*/
+	padding:10px;
+}
+	
+.footer .copy {
+	color:#eaeaea;/*warna font*/
+	text-align:center;/*posisi text*/
+	font-size:12px;/*ukuran font*/
+}
+	
+ /*clearfix*/
+.cf:before,
+.cf:after {
+	content:" ";/*1*/
+	display:table;/*2*/
+	}
+	
+.cf:after {
+	clear:both;
+}
+	
+.cf {
+	*zoom:1;
+}
+	
